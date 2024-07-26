@@ -5,7 +5,7 @@ import AutoComplete from "./component/autoComplete";
 function App() {
   // const [fetchSuggestion, setFetchSuggestion] = useState([]);
 
-  const StaticData = [
+  const staticData = [
     "apple",
     "banana",
     "orange",
@@ -15,8 +15,8 @@ function App() {
     "berry",
     "peach",
     "cherry",
-    "plum"
-  ]
+    "plum",
+  ];
 
   const fetchSuggestion = async () => {};
 
@@ -25,15 +25,15 @@ function App() {
       <h1>Autocomplete Debouncing </h1>
       <AutoComplete
         placeholder={"Enter Receipe"}
-        staticData={staticData}
+        // staticData={staticData}
         dataKey={"name"}
         fetchSuggestion={fetchSuggestion}
         customeLoading={<>Loading Recipe</>}
         onSelect={(res) => console.log(res)}
         onChange={(input) => {}}
-        onBlur = {(e)=>{}}
-        onFocus = {(e)=>{}}
-        customeStyles = {}
+        onBlur={(e) => {}}
+        onFocus={(e) => {}}
+        customeStyles={{}}
       />
     </>
   );
